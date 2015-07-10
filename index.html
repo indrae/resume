@@ -24,51 +24,96 @@
 
 	<body>
 
-		<header class="header">
-			<div class="header-panel shadow-z-2">
-				<div class="container-fluid">
-					<div class="row">
-						<img class="profile-image img-responsive pull-right" src="img/icon.png" alt="James Lee" />
-						<div class="profile-content pull-left">
-							<h1 class="name">Indra Rahmat</h1>
-							<h2 class="desc">Java Developer</h2>
-							<ul class="social list-inline">
-								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-github-alt"></i></a>
-								</li>
-							</ul>
+		<div class="header shadow-z-2">
+			<div class="container-fluid">
+				<div class="row">
+					<img class="profile-image img-responsive pull-right" src="img/icon.png" alt="James Lee" />
+					<div class="col-xs-3 profile-content pull-left">
+						<h1 class="name">Indra Rahmat</h1>
+						<h2 class="desc">Java Developer</h2>
+						<ul class="social list-inline">
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-github-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Your site ends -->
+
+		<!-- body -->
+		<div class="container-fluid main">
+			<div class="row">
+				<nav class="col-xs-3 menu">
+					<ul>
+						<li class="active withripple" data-target="#about">
+							Material Design for Bootstrap
+						</li>
+
+					</ul>
+				</nav>
+				<div class="pages">
+					<div class="col-xs-11" style="left: 70px">
+						<div class="col-xs-10">
+							<div class="well page active" id="about">
+								<h1 class="header">Material Design for Bootstrap</h1>
+								<p>
+									Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new <a href="http://www.google.com/design/spec/material-design/" target="_blank">Google Material Design</a> in your favorite front-end framework.
+								</p>
+								<p>
+									If you like this project you can support me by donating something on Gratipay, starring this repository, or <a href="https://github.com/FezVrasta/bootstrap-material-design/issues">reporting bugs and ideas</a>.
+								</p>
+								<p>
+									Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
+								</p>
+
+								<br>
+								<p>
+									If you want support the development of this project please consider donate something:
+								</p>
+
+								<style>
+									#paypal .btn {
+										padding: 5px 30px 6px 30px;
+									}
+									#paypal input {
+										background: transparent;
+										border: 0;
+									}
+								</style>
+								<pre><code>bower install bootstrap-material-design</code></pre>
+
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
-		</header>
-		<!-- Your site ends -->
-		
-		<!-- body -->
-		<!-- end body -->
+			<!-- end body -->
 
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
 
-		<script src="js/ripples.min.js"></script>
-		<script src="js/material.min.js"></script>
+			<script src="js/ripples.min.js"></script>
+			<script src="js/material.min.js"></script>
 
-		<script>
-			$(document).ready(function() {
-				// This command is used to initialize some elements and make them work properly
-				$.material.init();
-			});
-		</script>
+			<script>
+				$(document).ready(function() {
+					// This command is used to initialize some elements and make them work properly
+					$.material.init();
+				});
+			</script>
 
 	</body>
 

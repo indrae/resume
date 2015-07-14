@@ -106,6 +106,8 @@
 	text-decoration: none;
 }
 
+/*page style*/
+
 .pages {
 	position: absolute;
 	top: 0;
@@ -113,6 +115,7 @@
 	z-index: 4;
 	padding: 0;
 	overflow: auto;
+	width:80%
 }
 .pages > div {
 	padding-top: 64px;
@@ -154,3 +157,6 @@
 	color: black;
 }
 
+/* Timeline */
+
+/* end timeline */

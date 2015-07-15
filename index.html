@@ -17,11 +17,8 @@
 		<link href="css/material.min.css" rel="stylesheet">
 		<link href="css/ripples.min.css" rel="stylesheet">
 		<link href="css/bootstrap-dialog.min.css" rel="stylesheet">
-		<link href="css/angular-chart.css" rel="stylesheet">
-		<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-		<!-- Page style -->
-		<script src="js/angular-chart.min.js"></script>
+		<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 	</head>
 
@@ -108,7 +105,8 @@
 						<!--Skills -->
 						<div class="well page" id="skills">
 							<h1 class="header">Your Skills put here</h1>
-							
+							<canvas id="skillls" width="300" height="300"></canvas>
+							<small>Demo created by <a href="https://twitter.com/AurelioDeRosa">@Aurelio De Rosa</a></small>
 						</div>
 						<!--End Skills -->
 
@@ -260,12 +258,34 @@
 
 			<script src="js/bootstrap-dialog.min.js"></script>
 
-		
+			<script src="js/charts.js"></script>
+
 			<script>
 				$(document).ready(function() {
 					// This command is used to initialize some elements and make them work properly
 					$.material.init();
 				});
+
+				var pieData = [{
+					value : 25,
+					label : 'Java',
+					color : '#811BD6'
+				}, {
+					value : 10,
+					label : 'Scala',
+					color : '#9CBABA'
+				}, {
+					value : 30,
+					label : 'PHP',
+					color : '#D18177'
+				}, {
+					value : 35,
+					label : 'HTML',
+					color : '#6AE128'
+				}];
+
+				var context = document.getElementById('skillls').getContext('2d');
+				var skillsChart = new Chart(context).Pie(pieData);
 
 			</script>
 			<script>
@@ -317,13 +337,6 @@
 						message : $('<div></div>').load('remote.html')
 					});
 				}
-
-
-				angular.module("app", ["chart.js"]).controller("RadarCtrl", function($scope) {
-					$scope.labels = ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
-
-					$scope.data = [[65, 59, 90, 81, 56, 55, 40], [28, 48, 40, 19, 96, 27, 100]];
-				});
 
 			</script>
 

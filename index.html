@@ -74,7 +74,7 @@
 					<div class="col-xs-10">
 						<!-- introductions page -->
 						<div class="well page active" id="introductions">
-							<h1 class="header">Material Design for Bootstrap</h1>
+							<h1 class="header">Introduction put here</h1>
 							<p>
 								Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new <a href="http://www.google.com/design/spec/material-design/" target="_blank">Google Material Design</a> in your favorite front-end framework.
 							</p>
@@ -85,43 +85,6 @@
 								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
 							</p>
 
-							<br>
-							<p>
-								If you want support the development of this project please consider donate something:
-							</p>
-							</p>
-							<p>
-								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
-							</p>
-
-							<br>
-							<p>
-								If you want support the development of this project please consider donate something:
-							</p>
-							</p>
-							<p>
-								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
-							</p>
-
-							<br>
-							<p>
-								If you want support the development of this project please consider donate something:
-							</p>
-							</p>
-							<p>
-								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
-							</p>
-
-							<br>
-							<p>
-								If you want support the development of this project please consider donate something:
-							</p>
-							</p>
-							<p>
-								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
-							</p>
-
-							<br>
 							<p>
 								If you want support the development of this project please consider donate something:
 							</p>
@@ -141,7 +104,7 @@
 
 						<!--Skills -->
 						<div class="well page" id="skills">
-							<h1 class="header">Material Design for Bootstrap</h1>
+							<h1 class="header">Your Skills put here</h1>
 							<p>
 								Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new <a href="http://www.google.com/design/spec/material-design/" target="_blank">Google Material Design</a> in your favorite front-end framework.
 							</p>
@@ -151,28 +114,7 @@
 							<p>
 								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
 							</p>
-
-							<br>
-							<p>
-								If you want support the development of this project please consider donate something:
-							</p>
-							</p>
-							<p>
-								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
-							</p>
-
-							<br>
-
-							<style>
-								#paypal .btn {
-									padding: 5px 30px 6px 30px;
-								}
-								#paypal input {
-									background: transparent;
-									border: 0;
-								}
-							</style>
-							<pre><code>bower install bootstrap-material-design</code></pre>
+							
 						</div>
 						<!--End Skills -->
 
@@ -267,40 +209,7 @@
 															<span class="importo">Mussum ipsum cacilds</span>
 														</li>
 														<li>
-															<span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
-															<h2>Dialog with header and footer</h2>
-															<button class="btn btn-primary" data-toggle="modal" data-target="#complete-dialog">
-																Open dialog
-															</button>
-
-															<div id="complete-dialog" class="modal fade" tabindex="-1">
-																<div class="modal-dialog">
-																	<div class="modal-content">
-																		<div class="modal-header">
-																			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-																				&times;
-																			</button>
-																			<h4 class="modal-title">Dialog</h4>
-																		</div>
-																		<div class="modal-body">
-																			<p>
-																				Fore aut non quem incididunt, varias reprehenderit deserunt quem offendit,
-																				cillum proident ne reprehenderit, quem ad laborum, quo possumus praetermissum,
-																				si ne illustriora, hic appellat coniunctione, do labore aliqua quo probant. In
-																				probant voluptatibus quo mentitum est laboris. Quorum mandaremus graviterque.
-																				Mentitum id velit, dolor aut litteris, ea varias illustriora, ita commodo ita
-																				ingeniis, iis nulla appellat incurreret, aut irure amet summis pariatur ita ubi
-																				quis dolore veniam proident, consequat sed ingeniis.
-																			</p>
-																		</div>
-																		<div class="modal-footer">
-																			<button class="btn btn-primary" data-dismiss="modal">
-																				Dismiss
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
+															<span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>														
 														</li>
 														<li>
 															<p>
@@ -346,7 +255,33 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- Modal Example-->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">
+								Close
+							</button>
+							<button type="button" class="btn btn-primary">
+								Save changes
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 		<!-- end body -->
 
 		<script src="js/jquery-1.11.3.min.js"></script>
@@ -406,37 +341,6 @@
 				}, 100);
 			});
 
-			function cleanSource(html) {
-				var lines = html.split(/\n/);
-
-				lines.shift();
-				lines.splice(-1, 1);
-
-				var indentSize = lines[0].length - lines[0].trim().length,
-				    re = new RegExp(" {" + indentSize + "}");
-
-				lines = lines.map(function(line) {
-					if (line.match(re)) {
-						line = line.substring(indentSize);
-					}
-
-					return line;
-				});
-
-				lines = lines.join("\n");
-
-				return lines;
-			}
-
-
-			$("#opensource").click(function() {
-				$.get(window.location.href, function(data) {
-					var html = $(data).find(window.page).html();
-					html = cleanSource(html);
-					$("#source-modal pre").text(html);
-					$("#source-modal").modal();
-				});
-			});
 		</script>
 
 	</body>

@@ -65,6 +65,17 @@
 	padding-top: 8px;
 }
 
+/* end header*/
+
+/*footer*/
+.footer {
+	position: relative;
+	padding: 10px 0;
+	background: #f5f5f5;
+}
+
+
+/*end footer*/
 .logo {
 	position: absolute;
 	top: 0;

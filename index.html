@@ -19,11 +19,11 @@
 		<link href="css/bootstrap-dialog.min.css" rel="stylesheet">
 
 		<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
+		<title>Indra Rahmat</title>
 	</head>
 
 	<body>
-
+		<!-- header -->
 		<div class="header shadow-z-2">
 			<div class="container-fluid">
 				<div class="row">
@@ -44,14 +44,18 @@
 							<li>
 								<a href="#"><i class="fa fa-github-alt"></i></a>
 							</li>
+							<li>
+								<a href="#"><i class="fa fa-whatsapp"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-skype"></i></a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-		<!-- Your site ends -->
+		<!-- header ends -->
 
 		<!-- body -->
 		<div class="container-fluid main">
@@ -104,7 +108,7 @@
 							<pre><code>bower install bootstrap-material-design</code></pre>
 						</div>
 						<!-- end introductions -->
-						
+
 						<!-- educations page -->
 						<div class="well page" id="educations">
 							<h1 class="header">Educations put here</h1>
@@ -118,7 +122,6 @@
 								Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.
 							</p>
 
-							
 						</div>
 						<!-- end educations -->
 
@@ -267,98 +270,109 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!-- end body -->
+		<!-- end body -->
 
-			<script src="js/jquery-1.11.3.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
+		<!-- footer -->
+		<div class="footer shadow-z-2" id="footer">
+			<div class="container">
+				<div class="row">
+					<i class="fa fa-copyright">test</i>
+				</div>
+			</div>
+		</div>
+		<!-- footer ends -->
 
-			<script src="js/ripples.min.js"></script>
-			<script src="js/material.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 
-			<script src="js/bootstrap-dialog.min.js"></script>
+		<script src="js/ripples.min.js"></script>
+		<script src="js/material.min.js"></script>
 
-			<script src="js/charts.js"></script>
+		<script src="js/bootstrap-dialog.min.js"></script>
 
-			<script>
-				$(document).ready(function() {
-					// This command is used to initialize some elements and make them work properly
-					$.material.init();
-				});
+		<script src="js/charts.js"></script>
 
-				var pieData = [{
-					value : 25,
-					label : 'Java',
-					color : '#811BD6'
-				}, {
-					value : 10,
-					label : 'Scala',
-					color : '#9CBABA'
-				}, {
-					value : 30,
-					label : 'PHP',
-					color : '#D18177'
-				}, {
-					value : 35,
-					label : 'HTML',
-					color : '#6AE128'
-				}];
+		<script>
+			$(document).ready(function() {
+				// This command is used to initialize some elements and make them work properly
+				$.material.init();
+			});
 
-				var context = document.getElementById('skillls').getContext('2d');
-				var skillsChart = new Chart(context).Pie(pieData);
+			var pieData = [{
+				value : 25,
+				label : 'Java',
+				color : '#811BD6'
+			}, {
+				value : 10,
+				label : 'Scala',
+				color : '#9CBABA'
+			}, {
+				value : 30,
+				label : 'PHP',
+				color : '#D18177'
+			}, {
+				value : 35,
+				label : 'HTML',
+				color : '#6AE128'
+			}];
 
-			</script>
-			<script>
-				window.page = window.location.hash || "#introductions";
+			var context = document.getElementById('skillls').getContext('2d');
+			var skillsChart = new Chart(context).Pie(pieData);
 
-				$(document).ready(function() {
-					if (window.page != "#introductions") {
-						$(".menu").find("li[data-target=" + window.page + "]").trigger("click");
-					}
-				});
+		</script>
+		<script>
+			window.page = window.location.hash || "#introductions";
 
-				$(window).on("resize", function() {
-					$("html, body").height($(window).height());
-					$(".main, .menu").height($(window).height() - $(".header").outerHeight());
-					$(".pages").height($(window).height());
-				}).trigger("resize");
-
-				$(".menu li").click(function() {
-					// Menu
-					if (!$(this).data("target"))
-						return;
-					if ($(this).is(".active"))
-						return;
-					$(".menu li").not($(this)).removeClass("active");
-					$(".page").not(page).removeClass("active").hide();
-					window.page = $(this).data("target");
-					var page = $(window.page);
-					window.location.hash = window.page;
-					$(this).addClass("active");
-
-					page.show();
-
-					var totop = setInterval(function() {
-						$(".pages").animate({
-							scrollTop : 0
-						}, 0);
-					}, 1);
-
-					setTimeout(function() {
-						page.addClass("active");
-						setTimeout(function() {
-							clearInterval(totop);
-						}, 1000);
-					}, 100);
-				});
-
-				function showDialog() {
-					BootstrapDialog.show({
-						message : $('<div></div>').load('remote.html')
-					});
+			$(document).ready(function() {
+				if (window.page != "#introductions") {
+					$(".menu").find("li[data-target=" + window.page + "]").trigger("click");
 				}
+			});
 
-			</script>
+			$(window).on("resize", function() {
+				$("html, body").height($(window).height());
+				$(".main, .menu").height($(window).height() - $(".header").outerHeight()-20);
+				$(".pages").height($(window).height());
+			}).trigger("resize");
+
+			$(".menu li").click(function() {
+				// Menu
+				if (!$(this).data("target"))
+					return;
+				if ($(this).is(".active"))
+					return;
+				$(".menu li").not($(this)).removeClass("active");
+				$(".page").not(page).removeClass("active").hide();
+				window.page = $(this).data("target");
+				var page = $(window.page);
+				window.location.hash = window.page;
+				$(this).addClass("active");
+
+				page.show();
+
+				var totop = setInterval(function() {
+					$(".pages").animate({
+						scrollTop : 0
+					}, 0);
+				}, 1);
+
+				setTimeout(function() {
+					page.addClass("active");
+					setTimeout(function() {
+						clearInterval(totop);
+					}, 1000);
+				}, 100);
+			});
+
+			function showDialog() {
+				BootstrapDialog.show({
+					message : $('<div></div>').load('remote.html')
+				});
+			}
+
+		</script>
 
 	</body>
 
